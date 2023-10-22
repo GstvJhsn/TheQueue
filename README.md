@@ -27,22 +27,6 @@ In this folder you have the Client and the Server. Read ahead to see what progra
 	json
 	20180130
 
-### Guide
-
-The easiest way is just to download Java and open the "Client.jar", to start the client side of the program. Make sure that you are in the same folder as the file. Initiate several instances to simulate students and supervisors. The application requires argruments in form of sockets. Type like this:
-
-	java -jar Client.jar tcp://localhost:7000 tcp://localhost:7001
-
-This is an example of a connection with two servers that runs on your machine (you will learn how to start servers further down under JavaScript). The two tcp adresses are of course an example.
-
-Read further if you wish to use Eclipse, but keep in mind that you are limited to one instance of the program using this method.
-
-After installing Eclipse and the JDK mentioned above, you start Eclipse and set Client as your workspace. Once in you should import a Maven project and pick the Client folder again. The dependencies should already be stated in your pom.xml file, located under source -> target.
-
-Now you might have to right click on your folder and go to properties -> Java Compiler. You may change your "Compiler compliance level" to 17 if it is not already done so.
-
-A tip, if it still messes with you, would be to rebuild the folder stack which is done under "Java Build Path". This is quite common so you can "google it" if you are clueless about this.
-
 ## The Server
 
 ### JavaScript
@@ -52,18 +36,6 @@ A tip, if it still messes with you, would be to rebuild the folder stack which i
 		
 	Visual Studio Code
 	1.71.2
-
-### Guide
-
-After installing Node and Visual Studio Code, you can open the terminal and go to the Server folder. Here you can type:
-
-	npm install
-
-, to get everything you need. After this you may enter the following to start a server:
-
-	node index.js 7000 server1
-
-The port number should match the one choosen at the client side and "server1" is just an arbitrary name of your liking.
 
 ## Freelance Pattern
 
